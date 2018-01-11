@@ -22,7 +22,7 @@ let countField = document.querySelector('.countField')
 let getWordsCount = text =>
   text.length;
 
-//добавляем в селектор '.countField' количество символов из textarea
+//Подписываемся, добавляем в селектор '.countField' количество символов из textarea
 observer.subscribe(text => {
   countField.innerHTML = getWordsCount(text)
 })
